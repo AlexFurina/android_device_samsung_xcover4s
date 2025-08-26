@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/a10
+LOCAL_PATH := device/samsung/xcover4s
 
 # Bootloader
 BOARD_VENDOR := samsung
-TARGET_SOC := exynos7884B
-TARGET_BOOTLOADER_BOARD_NAME := universal7884B
+TARGET_SOC := exynos7884
+TARGET_BOOTLOADER_BOARD_NAME := universal7884
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
@@ -64,7 +64,7 @@ TARGET_KERNEL_ARCH := arm64
 # Boot
 BOARD_BOOT_HEADER_VERSION := 1
 BOARD_KERNEL_BASE := 0x10000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=exynos7884B androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.hardware=exynos7884 androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -119,7 +119,7 @@ TW_INCLUDE_CRYPTO := false
 TW_INCLUDE_CRYPTO_FBE := false
 
 # TWRP specific build flags
-TW_DEVICE_VERSION := Samsung Galaxy A10
+TW_DEVICE_VERSION := Samsung Galaxy XCover 4s
 TW_THEME := portrait_hdpi
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
