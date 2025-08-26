@@ -1,9 +1,9 @@
-## Recovery Device Tree for the Samsung Galaxy A10 (Exynos)
+## Recovery Device Tree for the Samsung Galaxy XCover4s (Exynos)
 
 ## How-to compile it:
 
 ```sh
 . build/envsetup.sh
-lunch omni_a10-eng
+lunch twrp_xcover4s-eng
 make recoveryimage -j$(nproc --all)
 ```
