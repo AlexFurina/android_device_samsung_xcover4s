@@ -146,3 +146,7 @@ RECOVERY_SDCARD_ON_DATA := true
 # LZMA Compression
 LZMA_COMPRESSION := -9
 LZMA_RAMDISK_TARGETS := recovery
+
+# RAMDisk Compression
+LZMA_RAMDISK_TARGETS := recovery,boot
+BOARD_RAMDISK_USE_LZMA := true
