@@ -14,3 +14,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PRODUCT_PROPERTIES += \
 	ro.fastbootd.available=true
+
+#Dynamic Partition Flag
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
