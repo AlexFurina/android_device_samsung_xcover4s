@@ -14,25 +14,19 @@
 # limitations under the License.
 #
 
-# Release name
-PRODUCT_RELEASE_NAME := xcover4s
+# Inherit from common AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
-# Inherit some common stuff.
+# Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Inherit device configuration
 $(call inherit-product, device/samsung/xcover4s/device.mk)
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
-## Device identifier. This must come after all inclusions
+# Device identifier. This must come after all inclusions
 PRODUCT_NAME := twrp_xcover4s
 PRODUCT_DEVICE := xcover4s
-PRODUCT_MODEL := Galaxy_XCover4s
+PRODUCT_MODEL := Galaxy XCover 4s
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_GMS_CLIENTID_BASE := android-samsung
